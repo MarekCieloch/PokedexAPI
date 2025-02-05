@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Static Server</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <h2 class="id-name">Insert Pokemon name or ID</h2>
+
+    <div class="pokedex-style">
+        <img src="/images/Pokedex.png" alt="Pokedex">
+
+        <form class="id-name-input" action="/search" method="POST">
+            <br>
+            <input type="text" id="pokemonName" name="name" placeholder="e.g, Pikachu">
+            <input type="number" id="pokedexID" name="id" placeholder="e.g, 25">
+
+            <input type="submit" value="Search">
+
+        </form>
+
+    </div>
+
+    <% if (id && name) { %>
+        <p class="pokemon-id">Pokedex <br> ID: <%= id %>
+        </p>
+        <p class="pokemon-name">
+            Name: <%= name.split(/[\s\W_]+/).map(word=> word.charAt(0).toUpperCase() + word.slice(1)).join(' ') %>
+        </p>
+        <img class="pokemon-icon" src="<%= imageURL %>" alt="Pokemon Image">
+        <ul class="pokemon-types">
+            <p>Type(s):</p>
+            <% pokemonType.forEach(type=>
+                {%>
+                <li class=>
+                    <%= type.split(/[\s\W_]+/).map(word=> word.charAt(0).toUpperCase() + word.slice(1)).join(' ') %>
+                </li>
+                <%});%>
+        </ul>
+        <% } else if (!id && !name) { %>
+            <p class="error">
+                <%= error %>
+            </p>
+
+            <% } else { %>
+                <p class="message">No data available.</p>
+
+                <% } %>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+{
+  "watch": ["server.js", "public/"],
+  "ext": "js css ejs",
+  "ignore": ["node_modules"]
+}

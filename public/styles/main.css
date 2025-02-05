@@ -1,0 +1,134 @@
+.pokedex-style {
+  position: relative; /* Enables absolute positioning inside */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically (if height is defined) */
+  flex-direction: column; /* Ensures everything is stacked */
+  width: fit-content; /* Keeps width based on content */
+  margin: 0 auto; /* Centers the container */
+}
+
+.pokedex-style img {
+  display: block;
+  max-width: 100%; /* Ensures responsiveness */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.id-name {
+  position: absolute;
+  top: 160px; /* Move it down from the top of the image */
+  left: 1170px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white; /* Text color */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.id-name-input {
+  position: absolute;
+  top: 180px; /* Move it down from the top of the image */
+  left: 615px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  color: white; /* Text color */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust as needed */
+}
+
+.pokemon-icon {
+  position: absolute;
+  top: 160px; /* Move it down from the top of the image */
+  left: 840px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  color: white; /* Text color */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust as needed */
+  width: 150px;
+}
+
+.pokemon-id {
+  position: absolute;
+  top: 140px; /* Move it down from the top of the image */
+  left: 670px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  color: yellow; /* Text color */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust as needed */
+  width: 150px;
+}
+
+.error {
+  position: absolute;
+  top: 140px; /* Move it down from the top of the image */
+  left: 720px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  color: red; /* Text color */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust as needed */
+  width: 250px;
+}
+
+.pokemon-name {
+  position: absolute;
+  top: 180px; /* Move it down from the top of the image */
+  left: 670px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  color: yellow; /* Text color */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Adjust as needed */
+  width: 150px;
+}
+
+.pokemon-types {
+  position: absolute;
+  top: 180px; /* Move it down from the top of the image */
+  left: 670px; /* Center horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  color: yellow; /* Text color */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Adjust as needed */
+  width: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
